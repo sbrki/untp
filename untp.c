@@ -11,7 +11,6 @@
 #define NTP_VERSION 0x3
 #define NTP_MODE_CLIENT 0x3
 #define NTP_TO_UNIX_OFFSET 2208988800ull
-#define HOST "pool.ntp.org"
 
 // Official ref: https://tools.ietf.org/html/rfc5905
 typedef struct __attribute__((packed))
