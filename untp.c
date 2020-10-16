@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
     struct hostent *host_info = gethostbyname(argv[1]);
     if (host_info == NULL)
     {
-        printf("no such host: %s\n", HOST);
+        printf("no such host: %s\n", (char *)argv[1]);
         exit(1);
     }
     memcpy((void *)&serv.sin_addr, host_info->h_addr_list[0], host_info->h_length);
